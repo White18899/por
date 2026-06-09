@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vajra Hub | Premium Tech & Web Solutions</title>
+
+    <!-- Meta tags for SEO -->
+    <meta name="description"
+        content="Vajra Hub is a premium startup developing high-end web applications, demo websites, front-end and back-end digital architecture. Discover our services and team.">
+    <meta name="keywords" content="Vajra Hub, Web Development, Front-end, Back-end, Tech Startup, Portfolio">
+    <meta name="author" content="Vajra Hub Team">
+
+    <!-- Google Fonts: Orbitron for futuristic titles, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;600;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Preloader Loading Screen -->
+    <div id="preloader">
+        <div class="loader-content">
+            <img src="14052-removebg-preview.png" alt="Vajra Hub Loading" class="loader-logo">
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WebGL Background Canvas -->
+    <div id="canvas-container">
+        <canvas id="webgl-bg"></canvas>
+    </div>
+
+    <!-- Custom Icon Cursor -->
+    <div id="custom-icon-cursor"><i class="fa-solid fa-bolt"></i></div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo">
+            <a href="#home">
+                <img src="14049-removebg-preview.png" alt="Vajra Hub Logo" class="nav-logo">
+                <span>VAJRA<span class="gold-text">HUB</span></span>
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <span class="subtitle gold-text">THE FUTURE OF WEB DESIGN</span>
+                <h1 class="hero-title">WE SHAPE THE <span class="gold-text glow-effect">DIGITAL</span> DIMENSION</h1>
+                <p class="hero-desc">Vajra Hub is a cutting-edge startup engineering bespoke, high-performance web
+                    solutions. We combine advanced WebGL rendering with robust back-end systems to forge immersive
+                    digital experiences.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Our Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="section-header">
+                <h2 class="section-title">ABOUT <span class="gold-text">VAJRA HUB</span></h2>
+                <div class="gold-bar"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-info card-glass">
+                    <div class="card-icon"><i class="fa-solid fa-bolt gold-text"></i></div>
+                    <h3>Who We Are</h3>
+                    <p>Rooted in the speed, power, and clarity of the legendary "Vajra" (thunderbolt), we are an agile
+                        team of creative developers, designers, and marketing strategists. We build more than just
+                        websites; we architect modern web ecosystems designed for massive scale, visual awe, and robust
+                        utility.</p>
+                </div>
+                <div class="about-info card-glass">
+                    <div class="card-icon"><i class="fa-solid fa-cubes gold-text"></i></div>
+                    <h3>Our Vision</h3>
+                    <p>To merge state-of-the-art interactive 3D WebGL visuals with enterprise-level back-ends. We
+                        empower brands by establishing high-performance web architectures that set new benchmarks in
+                        modern design and technical superiority.</p>
+                </div>
+                <div class="about-info card-glass">
+                    <div class="card-icon"><i class="fa-solid fa-rocket gold-text"></i></div>
+                    <h3>Core Pillars</h3>
+                    <p>⚡ High-Performance Frontends<br>
+                        ⚡ Scalable Cloud Backends<br>
+                        ⚡ Stunning WebGL Interactivity<br>
+                        ⚡ Goal-Oriented Marketing</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="section-header">
+                <h2 class="section-title">OUR <span class="gold-text">PROJECTS</span></h2>
+                <div class="gold-bar"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Muntaj Project (Ongoing) -->
+                <div class="project-card card-glass ongoing">
+                    <div class="project-tag">ONGOING</div>
+                    <div class="project-image-placeholder">
+                        <div class="wireframe-effect"></div>
+                        <i class="fa-solid fa-code-fork project-large-icon"></i>
+                    </div>
+                    <div class="project-details">
+                        <h3>Muntaj</h3>
+                        <p class="project-type">Web Application System</p>
+                        <p class="project-desc">A state-of-the-art software application engineered to revolutionize
+                            operations and digital infrastructure. Currently under heavy active development by our core
+                            team.</p>
+                        <div class="project-tech-stack">
+                            <span>WebGL</span>
+                            <span>Front-End Core</span>
+                            <span>Scalable APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KinetEdu Project (Ongoing) -->
+                <div class="project-card card-glass ongoing">
+                    <div class="project-tag">ONGOING</div>
+                    <div class="project-image-placeholder">
+                        <div class="wireframe-effect"></div>
+                        <i class="fa-solid fa-graduation-cap project-large-icon"></i>
+                    </div>
+                    <div class="project-details">
+                        <h3>KinetEdu</h3>
+                        <p class="project-type">Interactive EdTech Platform</p>
+                        <p class="project-desc">A premium kinetic learning platform featuring real-time educational
+                            simulations, interactive physics modules, and virtual laboratories for engineering students.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span>React.js</span>
+                            <span>HTML5 Canvas</span>
+                            <span>TailwindCSS</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Metallurgy College Project (Ongoing) -->
+                <div class="project-card card-glass ongoing">
+                    <div class="project-tag">ONGOING</div>
+                    <div class="project-image-placeholder">
+                        <div class="wireframe-effect"></div>
+                        <i class="fa-solid fa-atom project-large-icon"></i>
+                    </div>
+                    <div class="project-details">
+                        <h3>Metallurgy College Project</h3>
+                        <p class="project-type">Research & Phase Simulator</p>
+                        <p class="project-desc">An advanced research and engineering platform designed for colleges to
+                            simulate thermodynamic phase calculations and visualize metallic crystal structures.</p>
+                        <div class="project-tech-stack">
+                            <span>Python / Django</span>
+                            <span>D3.js Visualization</span>
+                            <span>Three.js / WebGL</span>
+                            <span>TailwindCSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Future Project 1 -->
+                <div class="project-card card-glass future">
+                    <div class="project-tag future-tag">UPCOMING</div>
+                    <div class="project-image-placeholder">
+                        <i class="fa-solid fa-circle-nodes project-large-icon"></i>
+                    </div>
+                    <div class="project-details">
+                        <h3>Next Gen Hub Project</h3>
+                        <p class="project-type">TBA</p>
+                        <p class="project-desc">A secret initiative designed to integrate complex API services with
+                            real-time WebGL data visualization matrices. Launching soon.</p>
+                        <div class="project-tech-stack">
+                            <span>Three.js</span>
+                            <span>WebSockets</span>
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team-section scroll-reveal">
+            <div class="section-header">
+                <h2 class="section-title">THE <span class="gold-text">TEAM</span></h2>
+                <div class="gold-bar"></div>
+            </div>
+
+            <!-- Founders & Marketing -->
+            <h3 class="team-category-title"><i class="fa-solid fa-chess-king gold-text"></i> Marketing & Leadership</h3>
+            <div class="team-grid founders-grid">
+                <div class="team-card card-glass">
+                    <div class="team-avatar">
+                        <div class="avatar-ring"></div>
+                        <img src="pro-img/Lakesh.jpeg" alt="Rm. Lakesh" class="avatar-img">
+                    </div>
+                    <h4>Rm. Lakesh</h4>
+                    <p class="team-role gold-text">Founder & Marketing Specialist</p>
+                    <p class="team-bio">Co-architect of Vajra Hub's business strategy. Leading startup relations,
+                        marketing campaigns, and brand expansions.</p>
+                    <div class="team-socials">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="team-card card-glass">
+                    <div class="team-avatar">
+                        <div class="avatar-ring"></div>
+                        <img src="pro-img/raju.jpeg" alt="Raju" class="avatar-img">
+                    </div>
+                    <h4>Raju</h4>
+                    <p class="team-role gold-text">Founder & Marketing Specialist</p>
+                    <p class="team-bio">Co-Founder of Vajra Hub. Managing outreach, partnership architectures, and the
+                        primary brand voice.</p>
+                    <div class="team-socials">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Heads & Core Engineering -->
+            <h3 class="team-category-title"><i class="fa-solid fa-code gold-text"></i> Core Engineering</h3>
+            <div class="team-grid engineering-grid">
+                <div class="team-card card-glass">
+                    <div class="team-avatar">
+                        <div class="avatar-ring"></div>
+                        <img src="pro-img/1nithin.jpeg" alt="Nithin" class="avatar-img">
+                    </div>
+                    <h4>Nithin</h4>
+                    <p class="team-role gold-text">Tech Head & Front End Engineer</p>
+                    <p class="team-bio">Leading technology directions and front-end interface engineering. Crafting
+                        standard-defining client-side architectures.</p>
+                    <div class="team-socials">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="team-card card-glass">
+                    <div class="team-avatar">
+                        <div class="avatar-ring"></div>
+                        <img src="pro-img/Nandhu.jpeg" alt="Nandhu" class="avatar-img">
+                    </div>
+                    <h4>Nandhu</h4>
+                    <p class="team-role gold-text">Tech Head & Back End Architect</p>
+                    <p class="team-bio">Architecting scalable databases, server logic, and cloud integrations. Ensuring
+                        performance, security, and data integrity.</p>
+                    <div class="team-socials">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Developers (Demo Websites) -->
+            <h3 class="team-category-title"><i class="fa-solid fa-laptop-code gold-text"></i> Web Developers </h3>
+            <div class="team-grid webdev-grid">
+                <div class="team-card card-glass">
+                    <div class="team-avatar">
+                        <div class="avatar-ring"></div>
+                        <div class="avatar-letter">G</div>
+                    </div>
+                    <h4>G. Jahanavi</h4>
+                    <p class="team-role gold-text">Web & Demo Developer</p>
+                    <p class="team-bio">Creating functional prototypes and client-facing demo sites. Specializing in
+                        rapid interactive designs.</p>
+                    <div class="team-socials">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="team-card card-glass">
+                    <div class="team-avatar">
+                        <div class="avatar-ring"></div>
+                        <div class="avatar-letter">R</div>
+                    </div>
+                    <h4>R. Hima</h4>
+                    <p class="team-role gold-text">Web & Demo Developer</p>
+                    <p class="team-bio">Crafting mockups, responsive landing pages, and demo showcases for client
+                        reviews.</p>
+                    <div class="team-socials">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sales Division -->
+            <h3 class="team-category-title"><i class="fa-solid fa-chart-line gold-text"></i> Sales Division</h3>
+            <div class="team-grid sales-grid">
+                <div class="team-card card-glass">
+                    <div class="team-avatar">
+                        <div class="avatar-ring"></div>
+                        <img src="pro-img/A. Chaitanya.jpeg" alt="A. Chaitanya" class="avatar-img">
+                    </div>
+                    <h4>A. Chaitanya</h4>
+                    <p class="team-role gold-text">Sales Executive</p>
+                    <p class="team-bio">Driving customer acquisitions, business development, client relations, and
+                        market outreach for Vajra Hub.</p>
+                    <div class="team-socials">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="section-header">
+                <h2 class="section-title">CONTACT <span class="gold-text">US</span></h2>
+                <div class="gold-bar"></div>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info-block card-glass">
+                    <h3>Let's Forge Something Legendary</h3>
+                    <p>Have an upcoming web project, a custom app requirement, or want to collaborate with our
+                        development team? Reach out and we'll reply with options, estimates, or schedule a demo.</p>
+
+                    <div class="info-items">
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope gold-text"></i>
+                            <div>
+                                <p class="info-label">Email Us</p>
+                                <p class="info-value">contact@vajrahub.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot gold-text"></i>
+                            <div>
+                                <p class="info-label">HQ Location</p>
+                                <p class="info-value">Vizag, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form card-glass">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="What are we building together?"></textarea>
+                    </div>
+
+                    <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+                        <span>Send Message</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                    <div id="form-feedback" class="form-feedback"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>VAJRA<span class="gold-text">HUB</span></h2>
+                <p>Immersive WebGL design & enterprise software architectures.</p>
+            </div>
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vajra Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+
+</html>
